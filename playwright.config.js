@@ -13,7 +13,7 @@ module.exports = defineConfig({
   use: {
      // Modificar esta URL si se quiere adaptar el framework a otra página
     baseURL: 'https://opensource-demo.orangehrmlive.com',
-    channel: 'chrome',
+    browserName: 'chromium',
     headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

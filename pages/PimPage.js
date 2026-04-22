@@ -10,6 +10,7 @@ class PimPage extends BasePage {
     this.employeeIdLabel = page.getByText('Employee Id', { exact: true });
     this.searchButton = page.getByRole('button', { name: 'Search' });
     this.resetButton = page.getByRole('button', { name: 'Reset' });
+    
   }
 
   async validatePimPageLoaded() {
@@ -22,6 +23,7 @@ class PimPage extends BasePage {
     await expect(this.employeeIdLabel).toBeVisible();
     await expect(this.searchButton).toBeVisible();
     await expect(this.resetButton).toBeVisible();
+  
   }
 }
 
